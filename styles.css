@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.loading {
+    background-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAeCAYAAAC7Q5mxAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGGSURBVGiB7dRNTxRBFIXhp2cYFURGZGTjR9xojBgT9T/4/3cGoy5U3KCJCqMCwXFRNaFjaKc/pjXR+ya96K7qc+qeW1UEQRAEQRAEQRAEQRAEQRAEtRj+7QXUYIgHmOAzfvTgcQH3McVJkx/bBLiKxyjwTT8FzVnHUym8MW5KBR4u0aPAE2xn/RUNGtUmwB2poG3cxppU1PcWWlUUWfsRLpW+D7PvRArxaAk+O1lz/n4VN3CKgzoCTbiDexVjU+zhPY4b6pa5lj02FsybZa8XGh67zAoeOgvvPA6xi49VE+oGWOCuFOAiZtiXwvyQ3xcxkAq5hc2aa5pzgpd4V9MLrkt33mrN+ftSo6a/DtQJcDObXalpVuZI2iV7+Fr6PsDlrDnBFkYt9Msc4Dk+VYx3aRKpOW/wWmnHVwU4cnapjluYnceX7DfCxd94d6V8rNelq2DLcpok677CW8zmBa3lZ5yfDf0V+Cc4ldY/6NFjit0Cz3o0+efps0P/BRFgRyLAjkSAHfkJyy0/8hpgVL8AAAAASUVORK5CYII=');
+    background-repeat: repeat-x;
+    background-position: right 0px bottom;
+
+    animation-name: wave;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes wave {
+  0% {
+    background-position: right 160px bottom;
+  }
+  50% {
+    background-position: right 80px bottom -5px;
+  }
+  100% {
+    background-position: right 0px bottom;
+  }
+}
